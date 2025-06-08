@@ -1,4 +1,23 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['user_email']) || empty($_SESSION['user_email'])) {
+    header('Location: login.php?message=login_required');
+    exit();
+}
+
+
+if (!isset($_SESSION['order_completed'])) {
+    header('Location: order.php?message=invalid_access');
+    exit();
+}
+
+
+unset($_SESSION['order_completed']);
+?>
+
+
+<?php
 $orderStatusMessage = "Order Placed";
 ?>
 
