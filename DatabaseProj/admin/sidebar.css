@@ -1,0 +1,65 @@
+/* sidebar.css */
+
+.sidebar {
+  width: 300px;
+  background-color: #181414;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white; /* Set text color to white */
+}
+
+.sidebar img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.sidebar h1 {
+  color: white; /* Changed from #3b82f6 to white */
+  margin: 0 0 40px;
+  font-size: 20px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  color: white; /* Make button text white */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  margin-bottom: 20px;
+}
+
+.sidebar button:hover {
+  background-color: #302c2c; /* Hover color */
+  border-radius: 8px;
+}
+
+.sidebar button.active {
+  background-color: 697565; /* Active button highlight */
+  border-radius: 8px;
+  font-weight: 600;
+  color: white; /* Keep text white on active */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.logo-container img {
+  height: 40px;
+  margin-bottom: 0;
+}
+
+.logo-container h1 {
+  color: white; /* Changed from #3b82f6 to white */
+  font-size: 20px;
+  margin: 0;
+}
