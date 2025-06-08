@@ -1,5 +1,16 @@
 <?php
 session_start();
+
+if (!isset($_SESSION['user_email']) || empty($_SESSION['user_email'])) {
+    $_SESSION['redirect_after_login'] = $_SERVER['REQUEST_URI'];
+    header('Location: login.php?message=login_required');
+    exit();
+}
+?>
+
+
+<?php
+session_start();
 ?>
 
 <!DOCTYPE html>
