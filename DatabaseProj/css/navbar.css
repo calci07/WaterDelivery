@@ -1,0 +1,97 @@
+
+/* Order Success header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #e6fcf9;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between logo and nav */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px; /* replaced inline margin */
+}
+
+nav a, .nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease; /* Smooth transition for size and underline */
+}
+
+nav a:hover, .nav-links a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: #000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #133;
+  padding: 14px 16px;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+hr {
+margin: 8px 0;
+border: 0;
+border-top: 1px solid #ccc;
+}
+
+.dropdown-content .dropdown-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
